@@ -3,9 +3,7 @@ using System.Collections.ObjectModel;
 class AdressBook
 {
     public int Count { get => _listOfContacts.Count; }
-
     readonly List<Contact> _listOfContacts = new();
-
     IDataManager _dataManager;
 
     public AdressBook(IDataManager dataManager)
